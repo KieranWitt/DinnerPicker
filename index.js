@@ -43,15 +43,15 @@ let dinnersPicked = [];
 
 //Function for selecting the meals
 const selectMeal = () => {
+
 dinnersPicked = [];
 let tempMealList = mealList;
+
 for (i=0; i<7; i++) {
   randomMeal = tempMealList[Math.floor(Math.random() * tempMealList.length)];
-  const index = tempMealList.indexOf(randomMeal);
-    if (index > -1) {
-      tempMealList.splice(index,1)
-    };
   dinnersPicked.push(randomMeal);
+  const index = tempMealList.indexOf(randomMeal);
+  tempMealList.splice(index,1)
 };
 
 showMeals(dinnersPicked);
