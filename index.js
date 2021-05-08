@@ -1,6 +1,5 @@
 
-//Array storing the list of potential meals i.e. the ones we like
-//may make this editable in the future
+//Array for meals 
 const mealList = [
   'Food1',
   'Food2',
@@ -8,35 +7,40 @@ const mealList = [
   'Food4',
   'Food5',
   'Food6',
+  'Food7',
+  'Food8',
 ];
 
-//Array storing the takeaways we like
+//Array for takeaways
 const takeawayList = [
-  'A',
-  'B',
-  'C',  
+  'Takeaway1',
+  'Takeaway2',
+  'Takeaway3',
+  'Takeaway4',
 ];
 
-//Empty array that will be used to output the randomly selected meals
-const dinnersPicked = [];
+//Array to store the dinners chosen
+let dinnersPicked = [];
 
-//Dinner picking logic
+//Function for selecting the meals
 const selectMeal = () => {
-  for (i = 0; i < 7; i++) {
-    const randomMeal = mealList[Math.floor(Math.random() * mealList.length)];
-    dinnersPicked.push(randomMeal);
-  };
-  console.log(dinnersPicked)
+dinnersPicked = [];
+tempMealList = mealList;
+for (i=0; i<7; i++) {
+  randomMeal = tempMealList[Math.floor(Math.random() * tempMealList.length)];
+  const index = tempMealList.indexOf(randomMeal);
+    if (index > -1) {
+      tempMealList.splice(index,1)
+    };
+  dinnersPicked.push(randomMeal);
+};
+  console.log(dinnersPicked);
 };
 
-
-//Takeaway selecting logic, this will be used if takeaway shows up in the main selectMeal function 
+//Function for selecting the takeaways
 const selectTakeaway = () => {
 
 };
 
-
-
-//Run
+//run
 selectMeal();
-
