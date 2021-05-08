@@ -2,15 +2,58 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<div>
-  <p>
+  <h1>
     Dinner Picker
-  </p>
-  <button type="button" onclick="selectMeal()">Click Me!</button>
+  </h1>
 
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Dinner</th>
+      <th>Difficulty</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td><a id='monFood'></a></td>
+      <td id='monDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td><a id='tueFood'></a></td>
+      <td id='tueDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td><a id='wedFood'></a></td>
+      <td id='wedDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td><a id='thuFood'></a></td>
+      <td id='thuDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td><a id='friFood'></a></td>
+      <td id='friDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td><a id='satFood'></a></td>
+      <td id='satDifficulty'></td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td><a id='sunFood'></a></td>
+      <td id='sunDifficulty'></td>
+    </tr>
 
+  </table>
+  
+  <div id="div1">
+    <button type="button" onclick="selectMeal()">Click Me!</button>
+  </div> 
 
-</div>
-
-
-<script src="index.js"></script>
+<footer>
+  <script src="index.js"></script>
+</footer>
