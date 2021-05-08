@@ -2,57 +2,60 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-  <h1>
-    Dinner Picker
-  </h1>
 
+
+<div class='container'>  
+  <h2 class="background double"><span>Dinner Picker</span></h2>
+  <div class='button -dark center' onclick="selectMeal()">Randomise meals</div>
   <table>
+    <thead>
     <tr>
       <th>Day</th>
       <th>Dinner</th>
       <th>Difficulty</th>
     </tr>
-    <tr>
-      <td>Monday</td>
-      <td><a id='monFood'></a></td>
-      <td id='monDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td><a id='tueFood'></a></td>
-      <td id='tueDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td><a id='wedFood'></a></td>
-      <td id='wedDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td><a id='thuFood'></a></td>
-      <td id='thuDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td><a id='friFood'></a></td>
-      <td id='friDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td><a id='satFood'></a></td>
-      <td id='satDifficulty'></td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td><a id='sunFood'></a></td>
-      <td id='sunDifficulty'></td>
-    </tr>
-
+    </thead>
+      <tbody>
+      <tr>
+        <td>Monday</td>
+        <td><a id='monFood'></a></td>
+        <td id='monDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><a id='tueFood'></a></td>
+        <td id='tueDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><a id='wedFood'></a></td>
+        <td id='wedDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><a id='thuFood'></a></td>
+        <td id='thuDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><a id='friFood'></a></td>
+        <td id='friDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td><a id='satFood'></a></td>
+        <td id='satDifficulty'></td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td><a id='sunFood'></a></td>
+        <td id='sunDifficulty'></td>
+      </tr>
+    </tbody>
   </table>
+</div>
   
-  <div id="div1">
-    <button type="button" onclick="selectMeal()">Click Me!</button>
-  </div> 
+    
 
 <footer>
   <script src="index.js"></script>
