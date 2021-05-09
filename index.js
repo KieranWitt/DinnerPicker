@@ -1,4 +1,3 @@
-
 //Meal objects
 let a = {Food:'Chicken and leek', Link: 'null', Difficulty: 'Easy'};
 let b = {Food:'Spaghetti Bolognese', Link: 'https://www.taste.com.au/recipes/spaghetti-bolognese/335cceba-3913-4172-8a28-44ad7a960ef4', Difficulty: 'Medium'};
@@ -30,14 +29,6 @@ let z = {Food:'Chilli Con Carne', Link: 'https://www.taste.com.au/recipes/chilli
 //Array for meals 
 const mealList = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
 
-//Array for takeaways
-const takeawayList = [
-  'Takeaway1',
-  'Takeaway2',
-  'Takeaway3',
-  'Takeaway4',
-];
-
 //Array to store the dinners chosen
 let dinnersPicked = [];
 
@@ -45,7 +36,7 @@ let dinnersPicked = [];
 const selectMeal = () => {
 
 dinnersPicked = [];
-let tempMealList = mealList;
+let tempMealList = [...mealList];
 
 for (i=0; i<7; i++) {
   randomMeal = tempMealList[Math.floor(Math.random() * tempMealList.length)];
@@ -61,36 +52,27 @@ const showMeals = (dinnersPicked) => {
 //Monday
   document.getElementById('monFood').innerHTML = dinnersPicked[0].Food;
   document.getElementById('monFood').setAttribute('href', dinnersPicked[0].Link);
-  document.getElementById('monDifficulty').innerHTML = dinnersPicked[0].Difficulty;
 //Tuesday
   document.getElementById('tueFood').innerHTML = dinnersPicked[1].Food;
   document.getElementById('tueFood').setAttribute('href', dinnersPicked[1].Link);
-  document.getElementById('tueDifficulty').innerHTML = dinnersPicked[1].Difficulty;
 //Wednesday
   document.getElementById('wedFood').innerHTML = dinnersPicked[2].Food;
   document.getElementById('wedFood').setAttribute('href', dinnersPicked[2].Link);
-  document.getElementById('wedDifficulty').innerHTML = dinnersPicked[2].Difficulty;
 //Thursday
   document.getElementById('thuFood').innerHTML = dinnersPicked[3].Food;
   document.getElementById('thuFood').setAttribute('href', dinnersPicked[3].Link);
-  document.getElementById('thuDifficulty').innerHTML = dinnersPicked[3].Difficulty;
 //Friday
   document.getElementById('friFood').innerHTML = dinnersPicked[4].Food;
   document.getElementById('friFood').setAttribute('href', dinnersPicked[4].Link);
-  document.getElementById('friDifficulty').innerHTML = dinnersPicked[4].Difficulty;
 //Saturday
   document.getElementById('satFood').innerHTML = dinnersPicked[5].Food;
   document.getElementById('satFood').setAttribute('href', dinnersPicked[5].Link);
-  document.getElementById('satDifficulty').innerHTML = dinnersPicked[5].Difficulty;
 //Sunday
   document.getElementById('sunFood').innerHTML = dinnersPicked[6].Food;
   document.getElementById('sunFood').setAttribute('href', dinnersPicked[6].Link);
-  document.getElementById('sunDifficulty').innerHTML = dinnersPicked[6].Difficulty;
 };
 
 //Function for selecting the takeaways
 const selectTakeaway = () => {
 
 };
-
-//selectMeal();
