@@ -204,6 +204,12 @@ h4 {
   border-radius: 5px;
 }
 
+.image {
+  width: 179px;
+  height: 129px;
+  border-radius: 5px;
+}
+
 /* Meal text */
 .mealtextcontainer {
   justify-content: center;
