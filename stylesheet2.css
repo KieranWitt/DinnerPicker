@@ -1,0 +1,312 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html {
+  background-color: #e5e5e5;
+}
+
+/* Header 1 */
+h1 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+/* Header 2 */
+h2 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.button > h2 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 13px;
+}
+
+/* Meal text */
+h3 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Difficulty text */
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* Title & header */
+.headercontainer {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: 0px;
+}
+
+.titlecontainer {
+  justify-content: center;
+  margin: 0px;
+  padding: 50px;
+}
+
+/* Grids */
+.topgridcontainer {
+  justify-content: center;
+  width: 100%;
+  height: 222px;
+  margin-bottom: 20px;
+}
+
+.grid-container-top {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 222px;
+  gap: 20px 20px;
+  grid-template-areas: "grid1 grid2 grid3 grid4";
+}
+
+.bottomgridcontainer {
+  justify-content: center;
+  width: 100%;
+  height: 222px;
+  margin-top: 20px;
+}
+
+.grid-container-bottom {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 222px;
+  gap: 20px 20px;
+  grid-template-areas: "grid5 grid6 grid7";
+}
+
+.footercontainer {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 40%;
+}
+
+/* Button*/
+.button {
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background: #000000;
+  border-radius: 10px;
+  margin: auto;
+}
+
+/*--------------------- CARDS -------------------------------*/
+.card {
+  width: 200px;
+  height: 222px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.card .mon {
+  grid-area: "grid1";
+}
+
+.card .tue {
+  grid-area: "grid2";
+}
+
+.card .wed {
+  grid-area: "grid3";
+}
+
+.card .thu {
+  grid-area: "grid4";
+}
+
+.card .fri {
+  grid-area: "grid5";
+}
+
+.card .sat {
+  grid-area: "grid5";
+}
+
+.card .sun {
+  grid-area: "grid5";
+}
+
+/* ------------------- INNER CARD DETAIL ------------------------ */
+/* Day text */
+.cardtitle {
+  position: absolute;
+  margin-left: 13px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/* Difficulty card */
+.difficultycard {
+  width: 66px;
+  height: 25px;
+  margin-top: 0px;
+  margin-left: 134px;
+  background: #000000;
+  border-radius: 0px 10px 0px 20px;
+}
+
+/* Difficulty text */
+.difficultytitle {
+  margin: 0px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Image placeholder */
+.imgplaceholdercontainer {
+  justify-content: center;
+  width: 200px;
+  height: 144px;
+  padding-top: 0px;
+}
+
+.imgplaceholder {
+  width: 176px;
+  height: 129px;
+  margin-left: 12px;
+  margin-top: 15px;
+  background: #c4c4c4;
+  border-radius: 5px;
+}
+
+/* Meal text */
+.mealtextcontainer {
+  justify-content: center;
+  width: 200px;
+  height: 53px;
+}
+
+.mealtext {
+  text-align: center;
+  width: 176px;
+  padding: 12px;
+  margin: 0px;
+}
+
+/* ------------------- SOCIAL BUTTONS ------------------------ */
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  transform: scale(0.8);
+}
+/*
+HTML ----> <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+*/
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.www:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.www .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.github:before {
+  background-color: #000000;
+}
+.social-btns .btn.github .fa {
+  color: #000000;
+}
+.social-btns .btn.stack:before {
+  background-color: #ef8236;
+}
+.social-btns .btn.stack .fa {
+  color: #ef8236;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  transform: scale(1);
+}
+.social-btns {
+  height: 50px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  margin-top: 70px;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 30px;
+  margin-top: 10px;
+}

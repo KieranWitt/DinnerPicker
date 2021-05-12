@@ -1,21 +1,21 @@
 //Meal objects
-let a = {Food:'Chicken and leek', Link: 'null', Difficulty: 'Easy'};
+let a = {Food:'Chicken and leek', Link: 'a', Difficulty: 'Easy'};
 let b = {Food:'Spaghetti Bolognese', Link: 'https://www.taste.com.au/recipes/spaghetti-bolognese/335cceba-3913-4172-8a28-44ad7a960ef4', Difficulty: 'Medium'};
 let c = {Food:'Lasagna', Link: 'https://www.taste.com.au/recipes/our-favourite-lasagne/2ac35c7f-3320-48ef-b2cb-ecef75883241', Difficulty: 'Medium'};
 let d = {Food:'Roast lamb', Link: 'https://www.taste.com.au/recipes/traditional-roast-lamb/2acb853a-237b-4177-bb85-fdec7977dbae', Difficulty: 'Hard'};
 let e = {Food:'Roast chicken', Link: 'https://www.taste.com.au/recipes/basic-roast-chicken/3f2100ad-e41b-44b5-bff5-9f5a27261e97', Difficulty: 'Hard'};
-let f = {Food:'Fajitas', Link: 'null', Difficulty: 'Easy'};
-let g = {Food:'Tortilla pizza', Link: 'null', Difficulty: 'Easy'};
+let f = {Food:'Fajitas', Link: 'a', Difficulty: 'Easy'};
+let g = {Food:'Tortilla pizza', Link: 'a', Difficulty: 'Easy'};
 let h = {Food:'Spaghetti Carbonara', Link: 'https://www.taste.com.au/recipes/best-spaghetti-carbonara/e121ffdc-2285-4798-b515-3860d1942eb1', Difficulty: 'Easy'};
-let i = {Food:'Chicken salad', Link: 'null', Difficulty: 'Easy'};
-let j = {Food:'Pies and mash', Link: 'null', Difficulty: 'Easy'};
-let k = {Food:'BBQ', Link: 'null', Difficulty: 'Medium'};
-let l = {Food:'Lamb chops and potatoes', Link: 'null', Difficulty: 'Medium'};
-let m = {Food:'Takeaway', Link: 'null', Difficulty: 'Easy'};
-let n = {Food:'Beans on toast', Link: 'null', Difficulty: 'Easy'};
-let o = {Food:'Sausage and mash', Link: 'null', Difficulty: 'Easy'};
+let i = {Food:'Chicken salad', Link: 'a', Difficulty: 'Easy'};
+let j = {Food:'Pies and mash', Link: 'a', Difficulty: 'Easy'};
+let k = {Food:'BBQ', Link: 'a', Difficulty: 'Medium'};
+let l = {Food:'Lamb chops and potatoes', Link: 'a', Difficulty: 'Medium'};
+let m = {Food:'Takeaway', Link: 'a', Difficulty: 'Easy'};
+let n = {Food:'Beans on toast', Link: 'a', Difficulty: 'Easy'};
+let o = {Food:'Sausage and mash', Link: 'a', Difficulty: 'Easy'};
 let p = {Food:'Stir fry', Link: 'https://www.taste.com.au/recipes/sticky-chinese-pork-stir-fry/deb19404-4aea-4f5c-ad5e-cf7974109727', Difficulty: 'Medium'};
-let q = {Food:'Seasoned Chicken and rice', Link: 'null', Difficulty: 'Easy'};
+let q = {Food:'Seasoned Chicken and rice', Link: 'a', Difficulty: 'Easy'};
 let r = {Food:'Shepards Pie', Link: 'https://www.taste.com.au/recipes/beef-shepherds-pie/70d1e84f-b2c3-4894-a11d-f6036ad5960c', Difficulty: 'Hard'};
 let s = {Food:'Beef nachos', Link: 'https://www.taste.com.au/recipes/beef-nachos/548cce8f-f9d3-4ca6-9111-029181bc630f', Difficulty: 'Medium'};
 let t = {Food:'Burgers', Link: 'https://www.taste.com.au/recipes/basic-beef-burger/a584ab73-6348-4c78-879e-eb7560965a5f', Difficulty: 'Easy'};
@@ -51,25 +51,32 @@ showMeals(dinnersPicked);
 const showMeals = (dinnersPicked) => {
 //Monday
   document.getElementById('monFood').innerHTML = dinnersPicked[0].Food;
-  document.getElementById('monFood').setAttribute('href', dinnersPicked[0].Link);
+  document.getElementById('monLink').setAttribute('href', dinnersPicked[0].Link);
+  document.getElementById('monDiff').innerHTML = dinnersPicked[0].Difficulty;
 //Tuesday
   document.getElementById('tueFood').innerHTML = dinnersPicked[1].Food;
-  document.getElementById('tueFood').setAttribute('href', dinnersPicked[1].Link);
+  document.getElementById('tueLink').setAttribute('href', dinnersPicked[1].Link);
+  document.getElementById('tueDiff').innerHTML = dinnersPicked[1].Difficulty;
 //Wednesday
   document.getElementById('wedFood').innerHTML = dinnersPicked[2].Food;
-  document.getElementById('wedFood').setAttribute('href', dinnersPicked[2].Link);
+  document.getElementById('wedLink').setAttribute('href', dinnersPicked[2].Link);
+  document.getElementById('wedDiff').innerHTML = dinnersPicked[2].Difficulty;
 //Thursday
   document.getElementById('thuFood').innerHTML = dinnersPicked[3].Food;
-  document.getElementById('thuFood').setAttribute('href', dinnersPicked[3].Link);
+  document.getElementById('thuLink').setAttribute('href', dinnersPicked[3].Link);
+  document.getElementById('thuDiff').innerHTML = dinnersPicked[3].Difficulty;
 //Friday
   document.getElementById('friFood').innerHTML = dinnersPicked[4].Food;
-  document.getElementById('friFood').setAttribute('href', dinnersPicked[4].Link);
+  document.getElementById('friLink').setAttribute('href', dinnersPicked[4].Link);
+  document.getElementById('friDiff').innerHTML = dinnersPicked[4].Difficulty;
 //Saturday
   document.getElementById('satFood').innerHTML = dinnersPicked[5].Food;
-  document.getElementById('satFood').setAttribute('href', dinnersPicked[5].Link);
+  document.getElementById('satLink').setAttribute('href', dinnersPicked[5].Link);
+  document.getElementById('satDiff').innerHTML = dinnersPicked[5].Difficulty;
 //Sunday
   document.getElementById('sunFood').innerHTML = dinnersPicked[6].Food;
-  document.getElementById('sunFood').setAttribute('href', dinnersPicked[6].Link);
+  document.getElementById('sunLink').setAttribute('href', dinnersPicked[6].Link);
+  document.getElementById('sunDiff').innerHTML = dinnersPicked[6].Difficulty;
 };
 
 //Function for selecting the takeaways
