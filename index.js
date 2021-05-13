@@ -86,7 +86,3 @@ const showMeals = (dinnersPicked) => {
   document.getElementById('sunImg').innerHTML = `<img class="image" src="${dinnersPicked[6].Image}">`;
 };
 
-//Function for selecting the takeaways
-const selectTakeaway = () => {
-
-};
