@@ -1,30 +1,40 @@
-//Meal objects
-let a = {Food:'Chicken and leek', Link: 'a', Difficulty: 'Easy', Image: './images/chickenandleek.jpg'};
-let b = {Food:'Spaghetti Bolognese', Link: 'https://www.taste.com.au/recipes/spaghetti-bolognese/335cceba-3913-4172-8a28-44ad7a960ef4', Difficulty: 'Medium', Image: './images/spaghettibolognaise.jpg'};
-let c = {Food:'Lasagna', Link: 'https://www.taste.com.au/recipes/our-favourite-lasagne/2ac35c7f-3320-48ef-b2cb-ecef75883241', Difficulty: 'Medium',  Image: './images/lasagna.jpg'};
-let d = {Food:'Roast lamb', Link: 'https://www.taste.com.au/recipes/traditional-roast-lamb/2acb853a-237b-4177-bb85-fdec7977dbae', Difficulty: 'Hard',  Image: './images/roastlamb.jpg'};
-let e = {Food:'Roast chicken', Link: 'https://www.taste.com.au/recipes/basic-roast-chicken/3f2100ad-e41b-44b5-bff5-9f5a27261e97', Difficulty: 'Hard', Image: './images/roastchicken.jpg'};
-let f = {Food:'Fajitas', Link: 'a', Difficulty: 'Easy', Image: './images/fajitas.jpg'};
-let g = {Food:'Tortilla pizza', Link: 'a', Difficulty: 'Easy', Image: './images/tortillapizza.jpg'};
-let h = {Food:'Spaghetti Carbonara', Link: 'https://www.taste.com.au/recipes/best-spaghetti-carbonara/e121ffdc-2285-4798-b515-3860d1942eb1', Difficulty: 'Easy', Image: './images/spaghetticarbonara.jpg'};
-let i = {Food:'Chicken salad', Link: 'a', Difficulty: 'Easy', Image: './images/chickensalad.jpg'};
-let j = {Food:'Pies and mash', Link: 'a', Difficulty: 'Easy', Image: './images/pieandmash.jpg'};
-let k = {Food:'BBQ', Link: 'a', Difficulty: 'Medium', Image: './images/bbq.jpg'};
-let l = {Food:'Lamb chops and potatoes', Link: 'a', Difficulty: 'Medium', Image: './images/lambchops.jpg'};
-let m = {Food:'Takeaway', Link: 'a', Difficulty: 'Easy', Image: './images/Takeaway.jpg'};
-let n = {Food:'Beans on toast', Link: 'a', Difficulty: 'Easy', Image: './images/beansontoast.jpg'};
-let o = {Food:'Sausage and mash', Link: 'a', Difficulty: 'Easy', Image: './images/sausageandmash.jpg'};
-let p = {Food:'Stir fry', Link: 'https://www.taste.com.au/recipes/sticky-chinese-pork-stir-fry/deb19404-4aea-4f5c-ad5e-cf7974109727', Difficulty: 'Medium', Image: './images/stirfry.jpg'};
-let q = {Food:'Seasoned Chicken and rice', Link: 'a', Difficulty: 'Easy', Image: './images/chickenandrice.jpg'};
-let r = {Food:'Shepards Pie', Link: 'https://www.taste.com.au/recipes/beef-shepherds-pie/70d1e84f-b2c3-4894-a11d-f6036ad5960c', Difficulty: 'Hard', Image: './images/shepherdspie.jpg'};
-let s = {Food:'Beef nachos', Link: 'https://www.taste.com.au/recipes/beef-nachos/548cce8f-f9d3-4ca6-9111-029181bc630f', Difficulty: 'Medium', Image: './images/beefnachos.jpg'};
-let t = {Food:'Burgers', Link: 'https://www.taste.com.au/recipes/basic-beef-burger/a584ab73-6348-4c78-879e-eb7560965a5f', Difficulty: 'Easy', Image: './images/burger.jpg'};
-let u = {Food:'Jacket potato', Link: 'https://www.taste.com.au/recipes/baked-jacket-potatoes/f7f45471-ed48-4cc7-b07b-d1de5a161403', Difficulty: 'Easy', Image: './images/jacketpotatoes.jpg'};
-let v = {Food:'Chicken curry', Link: 'https://www.taste.com.au/recipes/chicken-curry-2/bc4b534f-ab9f-4d64-87ec-74250db80a69', Difficulty: 'Medium', Image: './images/chickencurry.jpg'};
-let w = {Food:'Chicken enchiladas', Link: 'https://www.taste.com.au/recipes/chicken-enchiladas-tomato-salsa/a577f4e1-bae0-49e4-b888-cce4939f7883', Difficulty: 'Medium', Image: './images/chickenenchiladas.jpg'};
-let x = {Food:'Pasta bake', Link: 'https://www.taste.com.au/recipes/chicken-pasta-bake-2/84e050e7-229d-4782-b9e5-ae0186d5293b', Difficulty: 'Medium', Image: './images/pastabake.jpg'};
-let y = {Food:'Chicken bake', Link: 'https://www.taste.com.au/recipes/creamy-chicken-bake/dbd3e14e-5973-480c-90ce-52609e89dc7f', Difficulty: 'Hard', Image: './images/chickenbake.jpg'};
-let z = {Food:'Chilli Con Carne', Link: 'https://www.taste.com.au/recipes/chilli-con-carne-10/16d484bb-df3d-4069-bbb9-ea5856407344', Difficulty: 'Easy', Image: './images/Chiliconcarni.jpg'};
+//Meal object function
+const meal = (food, link, difficulty, image) => {
+  return {
+    food,
+    link,
+    difficulty,
+    image,
+  }
+};
+
+//Meals data
+let a = meal('Chicken and leek', 'a', 'Easy', './images/chickenandleek.jpg')
+let b = meal('Spaghetti Bolognese', 'https://www.taste.com.au/recipes/spaghetti-bolognese/335cceba-3913-4172-8a28-44ad7a960ef4', 'Medium', './images/spaghettibolognaise.jpg')
+let c = meal('Lasagna', 'https://www.taste.com.au/recipes/our-favourite-lasagne/2ac35c7f-3320-48ef-b2cb-ecef75883241', 'Medium',  './images/lasagna.jpg')
+let d = meal('Roast lamb', 'https://www.taste.com.au/recipes/traditional-roast-lamb/2acb853a-237b-4177-bb85-fdec7977dbae', 'Hard',  './images/roastlamb.jpg')
+let e = meal('Roast chicken', 'https://www.taste.com.au/recipes/basic-roast-chicken/3f2100ad-e41b-44b5-bff5-9f5a27261e97', 'Hard', './images/roastchicken.jpg')
+let f = meal('Fajitas', 'a', 'Easy', './images/fajitas.jpg')
+let g = meal('Tortilla pizza', 'a', 'Easy', './images/tortillapizza.jpg')
+let h = meal('Spaghetti Carbonara', 'https://www.taste.com.au/recipes/best-spaghetti-carbonara/e121ffdc-2285-4798-b515-3860d1942eb1', 'Easy', './images/spaghetticarbonara.jpg')
+let i = meal('Chicken salad', 'a', 'Easy', './images/chickensalad.jpg')
+let j = meal('Pies and mash', 'a', 'Easy', './images/pieandmash.jpg')
+let k = meal('BBQ', 'a', 'Medium', './images/bbq.jpg')
+let l = meal('Lamb chops and potatoes', 'a', 'Medium', './images/lambchops.jpg')
+let m = meal('Takeaway', 'a', 'Easy', './images/Takeaway.jpg')
+let n = meal('Beans on toast', 'a', 'Easy', './images/beansontoast.jpg')
+let o = meal('Sausage and mash', 'a', 'Easy', './images/sausageandmash.jpg')
+let p = meal('Stir fry', 'https://www.taste.com.au/recipes/sticky-chinese-pork-stir-fry/deb19404-4aea-4f5c-ad5e-cf7974109727', 'Medium', './images/stirfry.jpg')
+let q = meal('Seasoned Chicken and rice', 'a', 'Easy', './images/chickenandrice.jpg')
+let r = meal('Shepards Pie', 'https://www.taste.com.au/recipes/beef-shepherds-pie/70d1e84f-b2c3-4894-a11d-f6036ad5960c', 'Hard', './images/shepherdspie.jpg')
+let s = meal('Beef nachos', 'https://www.taste.com.au/recipes/beef-nachos/548cce8f-f9d3-4ca6-9111-029181bc630f', 'Medium', './images/beefnachos.jpg')
+let t = meal('Burgers', 'https://www.taste.com.au/recipes/basic-beef-burger/a584ab73-6348-4c78-879e-eb7560965a5f', 'Easy', './images/burger.jpg')
+let u = meal('Jacket potato', 'https://www.taste.com.au/recipes/baked-jacket-potatoes/f7f45471-ed48-4cc7-b07b-d1de5a161403', 'Easy', './images/jacketpotatoes.jpg')
+let v = meal('Chicken curry', 'https://www.taste.com.au/recipes/chicken-curry-2/bc4b534f-ab9f-4d64-87ec-74250db80a69', 'Medium', './images/chickencurry.jpg')
+let w = meal('Chicken enchiladas', 'https://www.taste.com.au/recipes/chicken-enchiladas-tomato-salsa/a577f4e1-bae0-49e4-b888-cce4939f7883', 'Medium', './images/chickenenchiladas.jpg')
+let x = meal('Pasta bake', 'https://www.taste.com.au/recipes/chicken-pasta-bake-2/84e050e7-229d-4782-b9e5-ae0186d5293b', 'Medium', './images/pastabake.jpg')
+let y = meal('Chicken bake', 'https://www.taste.com.au/recipes/creamy-chicken-bake/dbd3e14e-5973-480c-90ce-52609e89dc7f', 'Hard', './images/chickenbake.jpg')
+let z = meal('Chilli Con Carne', 'https://www.taste.com.au/recipes/chilli-con-carne-10/16d484bb-df3d-4069-bbb9-ea5856407344', 'Easy', './images/Chiliconcarni.jpg')
 
 //Array for meals 
 const mealList = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]; 
@@ -48,41 +58,42 @@ for (i=0; i<7; i++) {
 showMeals(dinnersPicked);
 };
 
+//Elements to show the meals in HTML
 const showMeals = (dinnersPicked) => {
 //Monday
-  document.getElementById('monFood').innerHTML = dinnersPicked[0].Food;
-  document.getElementById('monLink').setAttribute('href', dinnersPicked[0].Link);
-  document.getElementById('monDiff').innerHTML = dinnersPicked[0].Difficulty;
-  document.getElementById('monImg').innerHTML = `<img class="image" src="${dinnersPicked[0].Image}">`;
+  document.getElementById('monFood').innerHTML = dinnersPicked[0].food;
+  document.getElementById('monLink').setAttribute('href', dinnersPicked[0].link);
+  document.getElementById('monDiff').innerHTML = dinnersPicked[0].difficulty;
+  document.getElementById('monImg').innerHTML = `<img class="image" src="${dinnersPicked[0].image}">`;
 //Tuesday
-  document.getElementById('tueFood').innerHTML = dinnersPicked[1].Food;
-  document.getElementById('tueLink').setAttribute('href', dinnersPicked[1].Link);
-  document.getElementById('tueDiff').innerHTML = dinnersPicked[1].Difficulty;
-  document.getElementById('tueImg').innerHTML = `<img class="image" src="${dinnersPicked[1].Image}">`;
+  document.getElementById('tueFood').innerHTML = dinnersPicked[1].food;
+  document.getElementById('tueLink').setAttribute('href', dinnersPicked[1].link);
+  document.getElementById('tueDiff').innerHTML = dinnersPicked[1].difficulty;
+  document.getElementById('tueImg').innerHTML = `<img class="image" src="${dinnersPicked[1].image}">`;
 //Wednesday
-  document.getElementById('wedFood').innerHTML = dinnersPicked[2].Food;
-  document.getElementById('wedLink').setAttribute('href', dinnersPicked[2].Link);
-  document.getElementById('wedDiff').innerHTML = dinnersPicked[2].Difficulty;
-  document.getElementById('wedImg').innerHTML = `<img class="image" src="${dinnersPicked[2].Image}">`;
+  document.getElementById('wedFood').innerHTML = dinnersPicked[2].food;
+  document.getElementById('wedLink').setAttribute('href', dinnersPicked[2].link);
+  document.getElementById('wedDiff').innerHTML = dinnersPicked[2].difficulty;
+  document.getElementById('wedImg').innerHTML = `<img class="image" src="${dinnersPicked[2].image}">`;
 //Thursday
-  document.getElementById('thuFood').innerHTML = dinnersPicked[3].Food;
-  document.getElementById('thuLink').setAttribute('href', dinnersPicked[3].Link);
-  document.getElementById('thuDiff').innerHTML = dinnersPicked[3].Difficulty;
-  document.getElementById('thuImg').innerHTML = `<img class="image" src="${dinnersPicked[3].Image}">`;
+  document.getElementById('thuFood').innerHTML = dinnersPicked[3].food;
+  document.getElementById('thuLink').setAttribute('href', dinnersPicked[3].link);
+  document.getElementById('thuDiff').innerHTML = dinnersPicked[3].difficulty;
+  document.getElementById('thuImg').innerHTML = `<img class="image" src="${dinnersPicked[3].image}">`;
 //Friday
-  document.getElementById('friFood').innerHTML = dinnersPicked[4].Food;
-  document.getElementById('friLink').setAttribute('href', dinnersPicked[4].Link);
-  document.getElementById('friDiff').innerHTML = dinnersPicked[4].Difficulty;
-  document.getElementById('friImg').innerHTML = `<img class="image" src="${dinnersPicked[4].Image}">`;
+  document.getElementById('friFood').innerHTML = dinnersPicked[4].food;
+  document.getElementById('friLink').setAttribute('href', dinnersPicked[4].link);
+  document.getElementById('friDiff').innerHTML = dinnersPicked[4].difficulty;
+  document.getElementById('friImg').innerHTML = `<img class="image" src="${dinnersPicked[4].image}">`;
 //Saturday
-  document.getElementById('satFood').innerHTML = dinnersPicked[5].Food;
-  document.getElementById('satLink').setAttribute('href', dinnersPicked[5].Link);
-  document.getElementById('satDiff').innerHTML = dinnersPicked[5].Difficulty;
-  document.getElementById('satImg').innerHTML = `<img class="image" src="${dinnersPicked[5].Image}">`;
+  document.getElementById('satFood').innerHTML = dinnersPicked[5].food;
+  document.getElementById('satLink').setAttribute('href', dinnersPicked[5].link);
+  document.getElementById('satDiff').innerHTML = dinnersPicked[5].difficulty;
+  document.getElementById('satImg').innerHTML = `<img class="image" src="${dinnersPicked[5].image}">`;
 //Sunday
-  document.getElementById('sunFood').innerHTML = dinnersPicked[6].Food;
-  document.getElementById('sunLink').setAttribute('href', dinnersPicked[6].Link);
-  document.getElementById('sunDiff').innerHTML = dinnersPicked[6].Difficulty;
-  document.getElementById('sunImg').innerHTML = `<img class="image" src="${dinnersPicked[6].Image}">`;
+  document.getElementById('sunFood').innerHTML = dinnersPicked[6].food;
+  document.getElementById('sunLink').setAttribute('href', dinnersPicked[6].link);
+  document.getElementById('sunDiff').innerHTML = dinnersPicked[6].difficulty;
+  document.getElementById('sunImg').innerHTML = `<img class="image" src="${dinnersPicked[6].image}">`;
 };
 
